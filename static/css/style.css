@@ -1,0 +1,36 @@
+/* Schneider-Electric dark palette */
+:root { --se-green:#00B140; }
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #000;
+  color: #e0e0e0;
+}
+
+/* DataTables tweaks */
+table.dataTable th,
+table.dataTable td { white-space: nowrap; }
+
+table.dataTable thead th {
+  background: #094611 !important;
+  color: #fff !important;
+}
+
+table.dataTable tbody tr.odd  td { background: #111 !important; }
+table.dataTable tbody tr.even td { background: #1a1a1a !important; }
+
+table.dataTable tbody tr td:nth-child(2):empty {
+  font-weight: 600;
+  background: #165c22 !important;
+  color: #fff !important;
+}
+
+table.dataTable tbody tr:hover td { background: #213d21 !important; }
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  color: #e0e0e0 !important;
+}
+
+/* brand-coloured buttons */
+.btn-success { background-color: var(--se-green) !important;
+               border-color:    var(--se-green) !important; }
